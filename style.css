@@ -141,6 +141,7 @@ div {
 
 .about__tex {  
    padding-left: 650px; 
+   cursor: pointer;
 }
 
 .about__tex p {
@@ -157,6 +158,7 @@ div {
 
 .about__tex2 {  
    padding-left: 650px;
+   cursor: pointer;
 }
 
  .about__tex2 p { 	
