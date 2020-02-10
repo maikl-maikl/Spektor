@@ -26,7 +26,6 @@ div {
    margin-top: -12px;    
  }
 
-
 .header__logo img {
    width: 100px; 
    margin-left: -160px;   
@@ -45,7 +44,6 @@ div {
 .menu li {
    display: inline-block;  
 }
-
 
 .menu li+li {
    padding-left: 55px;    
@@ -348,10 +346,10 @@ div {
 
 .arrow__left a {
    position: absolute; 
-   top: -10px;
+   top: -11px;
    left: 10px;	
    color: #373636; 
-   font-size: 50px;
+   font-size: 55px;    
 }
 
 .arrow__right  {
@@ -365,10 +363,10 @@ div {
 
 .arrow__right a {
    position: absolute;
-   top: -10px;
+   top: -11px;
    left: 8px;
    color: #373636; 
-   font-size: 50px;
+   font-size: 55px;
 }
 
 .Feedback {
