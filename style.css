@@ -198,21 +198,20 @@ div {
 
 .servises {
    background-color: #373737;
-   min-height: 132px;
-   padding: 0px 10px 0px;
-   
+   min-height: 137px;   
 }
 
 .servises__our {  
    display: flex;
-   justify-content: center;  
+   justify-content: center;
+   flex-wrap: wrap;  
 }
 
 .servises__our h1 {
-   padding: 50px 0px;		
+   padding: 35px 0px;		
    color: #f7f7f7;
    font-weight: 500;
-   font-size: 42px;
+   font-size: 43px;
    line-height: 26px;   
    letter-spacing: 0.05em; 
    text-transform: uppercase; 
@@ -223,8 +222,8 @@ div {
    border: 1px solid #959595;
    width: 350px;
    position: relative;
-   bottom: 80px;
-   left: 130px; 
+   bottom: 70px;
+   left: 145px; 
 }
 
 
@@ -243,8 +242,8 @@ div {
    border: 1px solid #959595; 
    position: relative;
    width: 350px;
-   bottom: 83px;
-   left: 835px;   
+   bottom: 73px;
+   left: 850px;   
 }
 
 .servises__right:after {
@@ -381,31 +380,32 @@ div {
 
 .Feedback {
    background-color: #373737;
-   min-height: 132px;   	
+   min-height: 137px;   
 }
 
 .Feedback__home {  
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
    width: 100%;  
 }
 
 .Feedback__home h1 {  
-   padding: 50px 0px;		
+   padding: 35px 0px;		
    color: #f7f7f7;
    font-weight: 500;
-   font-size: 42px;
+   font-size: 43px;
    line-height: 26px;   
    letter-spacing: 0.05em; 
    text-transform: uppercase; 
-   font-family: "times new roman",sans-serif; 	
+   font-family: "times new roman",sans-serif;   	
 }
 
 .Feedback__left {
    border: 1px solid #959595;
    width: 350px;
    position: relative;
-   bottom: 80px;
+   bottom: 70px;
    left: 145px;
 }
 
@@ -424,8 +424,8 @@ div {
    border: 1px solid #959595; 
    position: relative;
    width: 350px;
-   bottom: 83px;
-   left: 830px; 
+   bottom: 73px;
+   left: 835px; 
 }
 
 .Feedback__right:after {
@@ -626,7 +626,7 @@ span:hover {
    padding: 50px 0px;      
    color: #656464;
    font-weight: 500;
-   font-size: 42px;
+   font-size: 43px;
    line-height: 26px;   
    letter-spacing: 0.05em; 
    text-transform: uppercase; 
@@ -711,22 +711,20 @@ span:hover {
     font-size: 32px;
  } 
 
-.clients__pajes { 
-    display: grid;
-    grid-column-gap: 10px;
-    width: 100%;
-         
+.clients__pajes {     
+     display: grid;
+     grid-row-gap: 90px;    
+     padding: 0px 0px 80px;       
 }
 
 .clients__icon {
     display: grid;    
-    grid-template-columns: repeat(4,auto);     
-    align-content: center;            
+    grid-template-columns: repeat(4,auto); 
+    width: 100%;  
 }
 
-.clients__icon img {     
-    margin-bottom: 85px;
-    margin-left: 90px;       
+.clients__icon img {    
+    margin-left: 90px;
 }
 
 .quote {
