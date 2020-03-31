@@ -196,8 +196,8 @@ div {
 }
 
 .about__btn:hover {
-   opacity: 0.50;
-   transition: linear 0.30s; 
+   opacity: 0.80;
+   transition: linear 0.10s; 
 }
 
 .servises {
