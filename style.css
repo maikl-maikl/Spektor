@@ -4,62 +4,66 @@ body {
   padding: 0;   
 }
 
-/*html {
+html {
    box-sizing: border-box;
 }
 
-*, *:after, *:before{
-   box-sizing: inherit;
+*, *:after, *:before {
+   box-sizing: inherit;   
 }
-*/
-div {
-   box-sizing: border-box;    
+
+a {   
+   text-decoration: none;
+}
+
+ul,
+li {
+   list-style: none;
 }
 
 .header {
    background: url("img/ippel.jpg")no-repeat center top /cover;   
-   min-height: 643px;
-   padding: 50px 0px;
+   min-height: 745px;
+   padding: 45px 0px;
 }
 
 .container {
    margin: 0 auto; 
-   width: 100%;             
+   width: 100%;  
 }
 
 .header__logo {  
-   padding: 0px;    
+  margin: -10px 0px 0px 30px; 
+  display: flex;
+  align-content: center;
  }
 
 .header__logo img {  
-   width: 80px;   
-   margin: -10px 0px 0px 30px;  
+   width: 85px;   
 }
 
 .header__item {
    display: flex;
    justify-content: space-around; 
-   align-items: center;
+   align-content: center;
    flex-wrap: wrap;
 }
 
 .menu {
-   margin-top: -48px;
+   margin-top: -40px;
    margin-left: -65px;  
 }
 
 .menu li {
    display: inline-block;
-   padding-left: 60px;
-   list-style: none;  
+   padding-left: 60px;   
 }
 
 .menu a {
    font-family: "oswald";
    font-size: 20px;
    line-height: 26px;   
-   color: #fff; 
-   text-decoration: none;
+   color: #fff;   
    letter-spacing: 1px; 
    transition: linear 0.30s;
    font-weight: normal; 
@@ -106,20 +110,22 @@ div {
 .about {
    background: url("img/about.jpg")no-repeat left /cover;
    min-height: 430px;
-   max-width: 500px;
-   padding: 20px 90px;
+   max-width: 675px;
+   min-height: auto;
+   padding: 50px 90px;
    width: 100%;    
 }
 
 .about__title {    
     text-align: right;
-    width: 937px;        
+    width: 900px; 
+    margin-top: -35px;   
 }
 
 .about__title h1 {
    padding: 35px 0px;    
    color: #3f3f3f;
-   margin: 10px -18px;
+   margin: 10px -45px;
    font-weight: 400;
    font-size: 30px;
    line-height: 20px;   
@@ -133,7 +139,7 @@ div {
    bottom: 30px;
    border: 1px solid #6e6e6e;
    width: 392px; 
-   left: 538px; 
+   left: 535px; 
    margin-left: auto;  
 }
 
@@ -151,12 +157,12 @@ div {
 .about__tezis {
    display: grid; 
    justify-content: end;
-   width: 940px;   
+   width: 900px;   
 }
 
 .about__tex {  
    cursor: pointer; 
-   margin-right: -115px;
+   margin-right: -145px;
 }
 
 .about__tex p {
@@ -171,32 +177,31 @@ div {
    font-family: "bell mt";
  }
 
-
 .about__btn {
    display: grid;
    justify-content: end;
-   margin: 30px 40px;	
-   width: 790px;   
+   margin: 30px 52px;	
+   width: 750px;    
 }
 
 .about__btn a {
-   background-color: #05a0af;     
+   display: grid;
+   align-content: center;    
    font-size: 12px;
    line-height: 20px; 
    font-weight: 400px;  
    color: azure;
    text-decoration: none;
    width: 163px;
-   height: 22px;
-   display: inline-block;
-   text-align: center;
-   padding: 5px 10px;
+   height: 20px; 
+   padding: 15px 10px;
    border-radius: 2px;
-   letter-spacing: 0.10em;       
+   letter-spacing: 0.10em;   
+   background-color: #05a0af;       
 }
 
-.about__btn:hover {
-   opacity: 0.80;
+.about__btn a:hover {
+   background-color: #96a39a;
    transition: linear 0.10s; 
 }
 
@@ -211,7 +216,7 @@ div {
 
 .servises__our {  
    display: flex;
-   justify-content: center;
+   justify-content: center;   
    width: 100%; 
 }
 
@@ -278,7 +283,7 @@ div {
 }
 
 .detalis__server { 
-   margin: 0px -75px;  
+   padding: 100px 0px;
 }
 
 .detalis__server:nth-child(2) {	
@@ -289,11 +294,11 @@ div {
 }
 
 .detalis__server img {
-   margin: 120px 90px;
+   margin: 10px 70px;
 }
 
 .detalis__server h1  {
-   margin-top: -65px;
+   margin-top: 50px;
    color: #edf0f1;
    font-size: 24px;
    line-height: 26px;
@@ -304,33 +309,32 @@ div {
 }
 
 .detalis__server p  {
-   margin-top: 15px;	
+   margin: 0 auto;  	
    color: #edf0f1;
    font-size: 14px;
    line-height: 20px;
    letter-spacing: 0.50px; 
    font-weight: 400px;  
    text-align: center; 
-   width: 290px;
-   margin: 0 auto;    
+   width: 290px;     
 }
 
-.detalis__btn {
-   margin-top: 25px;
+.detalis__btn {   
+   display: flex;
+   justify-content: center;
+   padding: 30px 0px;
 }
   
-.detalis__btn a {   
+.detalis__btn a {    
+   display: flex;
+   align-items: center;  
    background-color: #959595;  
-   display: block;
-   margin: 0 auto; 
-   text-align: center; 
-   width: 140px;
+   width: 155px;
    height: 20px;
    border-radius: 2px;
    letter-spacing: 0.01em;
-   padding: 7px 10px;
-   color: #ebebeb;
-   text-decoration: none; 
+   padding: 15px 25px;
+   color: #ebebeb;   
    font-weight: 900px;
    font-size: 14px;
    line-height: 20px;   
@@ -517,7 +521,7 @@ b {
    width: 100%;       
 }
 
-.portfolio__inter-101 {
+.portfolio__inter {
    position: relative;   
    margin-top: -140px;
    cursor: pointer;
@@ -525,43 +529,44 @@ b {
    margin-right: 30px; 
 }
 
-.portfolio__inter-101 img {    
+.portfolio__inter img {    
    width: 100%;         
 }
 
-.portfolio__inter-101:nth-child(1) {    
+.portfolio__inter:nth-child(1) {    
    margin-right: 0px;
    width: 275px;
 }
 
-.portfolio__inter-101:nth-child(2) {    
+.portfolio__inter:nth-child(2) {    
    margin-left: -30px;
    width: 300px;   
 }
 
-.portfolio__inter-101:nth-child(3) {   
+.portfolio__inter:nth-child(3) {   
    margin-left: -35px;
    top: 5px; 
    width: 235px; 
 }
 
-.portfolio__inter-101:hover {
+.portfolio__inter:hover {
    transform: scale(1.05) translatey(6.5px);       
 }
 
 span {
-   display: flex;
-   justify-content: center;
+   display: flex;   
    align-items: center;
    color: #272727;
-   font-size: 12px;
+   font-size: 13px;
    position: absolute;
    z-index: 1;
    background-color: #fff; 
-   top: 220px;
+   top: 223px;
    left: 30px;
-   padding: 10px 22px;
-   width: 25px;   
+   margin: 0px 20px;
+   width: 45px;
+   height: 35px;
+   font-weight: 700px;   
 }
 
 span:hover {
@@ -569,48 +574,42 @@ span:hover {
    transition: 0.30s linear; 
 }
 
-.portfolio__inter-101 span {
-   padding-left: 10px; 
-   padding-right: 12px;
+.portfolio__inter span {
+   padding-left: 18px; 
+   padding-right: 36px;    
 }
 
 .wrrap-1 {
-   margin-left: 0px;   
+   margin-left: 0px;
+} 
+
+.wrraper-1 {
+   margin-left: 58px;  
+   width: 135px;   
+   height: 35px;
+   font-size: 12px;        
 }
 
 .wrrap-2 {
-   margin-left: 15px;   
+   margin-left: 15px;
+} 
+
+.wrraper-2 {
+   margin-left: 72px;  
+   width: 135px;   
+   height: 35px;
+   font-size: 12px;   
 }
 
 .wrrap-3 {
    margin-left: -20px;
    margin-top: -5px;
-}
-   
-.wrrap__wrrap-1 {
-   margin-left: 53px;
-   padding: 10px 35px;
-   width: 108px;
-   text-align: left;
-   height: 15px;
-   font-size: 12px;
-}
+} 
 
-.wrrap__wrrap-2 {
-   margin-left: 68px;
-   padding: 10px 35px;
-   width: 108px;
-   text-align: left;
-   height: 15px;
-   font-size: 12px;   
-}
-
-.wrrap__wrrap-3 {
-   margin-left: 33px;
-   padding: 10px 35px;
-   width: 108px;
-   text-align: left;
-   height: 15px;
+.wrraper-3 {
+   margin-left: 38px;  
+   width: 135px;   
+   height: 35px;
    font-size: 12px;
    margin-top: -5px;   
 }
@@ -740,7 +739,7 @@ span:hover {
 }
 
 .quote__exspress {  
-   margin-left: 70px;        
+   margin-left: 80px;        
 }
 
 .quote__exspress h1 {
@@ -764,42 +763,45 @@ span:hover {
 
 .quote__bridges {
    display: flex;
-   justify-content: flex-end; 
-   /*width: 90%;*/
-   margin-right: 85px;
-   padding-bottom: 65px;  
+   justify-content: flex-end;   
+   margin-left: 40px;
+   padding-bottom: 65px;
+   width: 90%;  
 }
 
 .quote__bridges p {
+   display: flex;
+   align-items: center;
    border: 2px solid #589ba3;   
    color: #ccdee0;  
    font-size: 10px;
-   line-height: 20px;  
-   display: flex;
-   align-items: center;
+   line-height: 20px;   
    padding-left: 25px;  
    margin-top: -65px;    
 }
 
 .quote__bridges p:first-child{
-   width: 204px;
-   height: 45px;
+   padding: 0px 25px;
+   width: 235px;
+   height: 55px;
    border-bottom-left-radius: 3px;
    border-top-left-radius: 3px;    
    border-right: 0px solid #589ba3;
 }
 
 .quote__bridges p:nth-child(2){
-   width: 200px;
-   height: 45px;
+   padding: 0px 25px;
+   width: 230px;
+   height: 55px;
    border-radius: 0px;
    border: 2px solid #589ba3;
    border-right: 0px solid #589ba3;   
 }
 
 .quote__bridges p:nth-child(3){
-   width: 90px;
-   height: 45px;
+   padding: 0px 20px;
+   width: 120px;
+   height: 55px;
    font-size: 12px;
    font-weight: 700;
    color: #47939c;
@@ -812,12 +814,12 @@ span:hover {
 .footer {
    background-color: #474747;
    min-height: 207px;
-   padding: 10px 0px 10px 0px;
+   padding: 10px 0px 50px 0px;
 }
 
 .plans__contakt { 
    display: flex;
-   margin-left: 30px;
+   margin-left: 40px;
    width: 90%;   
 }
 
@@ -836,17 +838,20 @@ span:hover {
 }
 
 .plans__dellet li {
-   list-style: none;
+   margin-right: 50px;
    color: #fff;
    font-size: 14px;
    line-height: 32px;
-   cursor: pointer;  
-   margin-right: 30px;       
+   cursor: pointer;          
 }
 
 .dellet__first {
     font-family: "orthodox.tt ieucs8";
     font-size: 15px;   
+}
+
+ ul .dellet__last {
+   color: #407699;
 }
 
 .plans__dellet li:hover {
@@ -857,13 +862,15 @@ span:hover {
    display: flex;
    justify-content: flex-end;
    margin-top: -150px;   
-   margin-right: 85px;
+   margin-right: 90px;  
 }
 
-.plans__email {  
-   width: 165px;
-   height: 45px;
-   padding: 10px 0px 0px 15px;
+.plans__email { 
+   display: flex;
+   align-items: center; 
+   width: 180px;
+   height: 50px;
+   padding: 0px 15px;
    background-color: #cccccc;
    transition: .1s linear;      
 }
@@ -880,12 +887,14 @@ span:hover {
 }
 
 .plans__Subscribe {
-   width: 105px;
-   height: 45px;
-   padding: 10px 0px 0px 25px;
+   display: flex;
+   align-items: center; 
+   width: 120px;
+   height: 50px;
+   padding: 0px 25px;
    background-color: #0072bc;    
    border: 1px solid #cccccc;
-   transition: .1s linear; 
+   transition: .1s linear;   
 }
 
 .plans__Subscribe a {
@@ -903,7 +912,7 @@ span:hover {
    display: flex;
    justify-content: flex-end;
    margin-top: 40px;
-   margin-right: 85px;   
+   margin-right: 90px;   
 }
 
 .social__google a {
@@ -912,14 +921,14 @@ span:hover {
    margin-left: 10px;
    font-weight: normal;
    background-color: #2e2e2e;
-   padding: 10px; 
+   padding: 12px; 
    border-radius: 50%;  
 }
 
-.social__google a:first-child {
-   padding: 10px 12px 10px 12px;
+.social__google a:nth-child(1) {
+   padding: 10px 15px 10px 15px;
 }
 
 .social__google a:nth-child(3) {
-   padding: 10px 8px 10px 8px;
+   padding: 10px 10px 10px 10px;
 }
