@@ -112,8 +112,7 @@ li {
    min-height: 430px;
    max-width: 675px;
    min-height: auto;
-   padding: 50px 90px;
-   width: 100%;    
+   padding: 50px 90px;  
 }
 
 .about__title {    
@@ -134,7 +133,7 @@ li {
    font-family: "times new roman", sans-serif;
 }
 
-.slider__inner {
+.about__line {
    position: relative;  
    bottom: 30px;
    border: 1px solid #6e6e6e;
@@ -143,7 +142,7 @@ li {
    margin-left: auto;  
 }
 
-.slider__inner:before {
+.about__line:before {
    content: ""; 
    display: block; 
    width: 65px;
@@ -156,7 +155,7 @@ li {
 
 .about__tezis {
    display: grid; 
-   justify-content: end;
+   justify-content: end;   
    width: 900px;   
 }
 
@@ -174,27 +173,26 @@ li {
    font-weight: 700px;
    margin-top: -12px;  
    width: 408px; 
-   font-family: "bell mt";
+   font-family: "bell mt";   
  }
 
 .about__btn {
    display: grid;
    justify-content: end;
-   margin: 30px 52px;	
+   margin: 20px 52px;	
    width: 750px;    
 }
 
 .about__btn a {
    display: grid;
-   align-content: center;    
-   font-size: 12px;
-   line-height: 20px; 
+   align-content: center; 
+   text-align: center;  
+   font-size: 12px;  
    font-weight: 400px;  
-   color: azure;
-   text-decoration: none;
+   color: azure;  
    width: 163px;
    height: 20px; 
-   padding: 15px 10px;
+   padding: 15px 0px;
    border-radius: 2px;
    letter-spacing: 0.10em;   
    background-color: #05a0af;       
@@ -272,14 +270,12 @@ li {
 
 .detalis {
    background-color: #3d3d3d;
-   max-height: 555px;
-   margin: 0 auto;  
+   max-height: 555px;    
 } 
 
 .detalis__box {
    display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;  
+   justify-content: space-around;  
 }
 
 .detalis__server { 
@@ -327,18 +323,19 @@ li {
   
 .detalis__btn a {    
    display: flex;
-   align-items: center;  
+   justify-content: center;
+   align-items: center;   
    background-color: #959595;  
-   width: 155px;
+   width: 163px;
    height: 20px;
    border-radius: 2px;
    letter-spacing: 0.01em;
-   padding: 15px 25px;
+   padding: 15px 0px;
    color: #ebebeb;   
    font-weight: 900px;
    font-size: 14px;
    line-height: 20px;   
-   font-family: "times new roman",sans-serif;   
+   font-family: "times new roman",sans-serif;
 }
 
 .detalis__btn:hover {
@@ -473,13 +470,13 @@ li {
    position: relative;
    top: 40px;
    display: block;
-   margin-left: 130px;
+   margin-left: 135px;
    width: 65px;
    border: 1px solid #a29e9e;   
 }
 
 .contakt__nomer {
-   margin-left: 150px;     
+   margin-left: 155px;     
  }
 
 b {
@@ -511,7 +508,7 @@ b {
    position: absolute;
    color: #a29e9e;
    font-size: 33px;
-   left: 265px;  
+   left: 270px;  
 }
 
 .portfolio {
@@ -614,18 +611,18 @@ span:hover {
    margin-top: -5px;   
 }
     
-.clients {
+.slider {
    background-color:#fff;
    min-height: 530px;
    margin: 0 auto;   
 }
   
-.clients__visions {
+.slider__inner {
   display: grid;   
   text-align: center;
 }
 
-.clients__visions h1 {  
+.slider__inner h1 {  
    padding: 50px 0px;      
    color: #656464;
    font-weight: 500;
@@ -636,7 +633,7 @@ span:hover {
    font-family: "times new roman",sans-serif;   
 } 
 
-.clients__left {
+.slider__left {
    border: 1px solid #959595;
    width: 350px;
    position: relative;
@@ -644,7 +641,7 @@ span:hover {
    left: 170px;   
 }
 
-.clients__left:before {
+.slider__left:before {
    content: ""; 
    display: block; 
    width: 78px;
@@ -655,7 +652,7 @@ span:hover {
    z-index: 1;   
 }
 
-.clients__right {
+.slider__right {
    border: 1px solid #959595; 
    position: relative;
    width: 350px;
@@ -664,7 +661,7 @@ span:hover {
    margin-left: auto;
 }
 
-.clients__right:after {
+.slider__right:after {
    content: ""; 
    display: block; 
    width: 78px;
@@ -675,14 +672,14 @@ span:hover {
    z-index: 1; 
 }
 
-.clients__center {  
+.slider__center {  
    display: grid;
    grid-template-columns: 1fr 0fr;  
    width: 100%;
    padding: 30px 0px;         
 }
 
-.clients__chevron-left {     
+.slider__chevron-left {     
     position: relative;
     width: 35px;
     height: 35px;
@@ -691,7 +688,7 @@ span:hover {
     background-color: #3d9ee1;     
 }
 
-.clients__chevron-left a {    
+.slider__chevron-left a {    
     position: absolute;
     color: #373637;
     left: 8px;
@@ -699,7 +696,7 @@ span:hover {
     font-size: 32px;
 }
 
-.clients__chevron-right {
+.slider__chevron-right {
     position: relative;
     width: 35px;
     height: 35px;
@@ -708,7 +705,7 @@ span:hover {
     background-color: #3d9ee1;    
 }  
 
-.clients__chevron-right a {   
+.slider__chevron-right a {   
     position: absolute;
     color: #373637;
     right: 8px;
@@ -716,18 +713,18 @@ span:hover {
     font-size: 32px;
  } 
 
-.clients__icons {    
+.slider__icons {    
     display: grid;
     grid-row-gap: 90px;    
 }
 
-.clients__icon {     
+.slider__icon {     
    display: grid;
    grid-template-columns: repeat(4,auto);  
    width: 100%;   
 }
 
-.clients__icon img {    
+.slider__icon img {    
     margin-left: 90px;
     margin-top: -40px;
     padding-bottom: 70px;
