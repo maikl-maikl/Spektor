@@ -105,36 +105,22 @@ li {
 }
 
 .about {
-      background-color: #fff;
-      min-height: 430px;       
+      background: url("img/about.jpg")no-repeat left /cover;
+      min-height: 430px;
+      max-width: 675px; 
+      padding: 50px 90px;      
 }
-
-
-.about__column {
-    display: flex;
-    max-width: 500px;
-    justify-content: space-between;      
-}
-
-.about__icon {     
-    display: flex;
-    justify-content: flex-start; 
-}
-
-
-.about__icon img {
-       max-width: 675px;       
-}
-
 
 .about__title {    
-   padding: 45px 45px;
+      text-align: right;
+      width: 900px; 
+      margin-top: -35px;   
 }
 
-
-.about__title h1 {    
+.about__title h1 {
+      padding: 35px 0px;    
       color: #3f3f3f;
-      margin: 10px 0px;
+      margin: 10px -45px;
       font-weight: 400;
       font-size: 30px;
       line-height: 20px;   
@@ -148,7 +134,8 @@ li {
       bottom: 30px;
       border: 1px solid #6e6e6e;
       width: 392px; 
-      top: 5px;
+      left: 535px; 
+      margin-left: auto;  
 }
 
 .about__line:before {
@@ -162,35 +149,40 @@ li {
       z-index: 1; 
 }
 
-.about__wrrap {
-       margin: 30px 0px;
+.about__tezis {
+      display: grid; 
+      justify-content: end;   
+      width: 900px;   
 }
 
-
-.about__text {  
+.about__tex {  
       cursor: pointer; 
-      margin: 20px 0px;
+      margin-right: -145px;
 }
 
-.about__text p {
-      margin-bottom: 20px;  
+.about__tex p {
+      padding: 10px 0px;		
       font-size: 15px;
       line-height: 15px;
       color: #000000;
       letter-spacing: 0.10px; 
-      font-weight: 700px;    
+      font-weight: 700px;
+      margin-top: -12px;  
       width: 408px; 
       font-family: "bell mt";   
  }
 
-.about__btn {   
-      margin: 40px 0px;    
+.about__btn {
+      display: grid;
+      justify-content: end;
+      margin: 20px 52px;	
+      width: 750px;    
 }
 
 .about__btn a {
-      display: flex;
-      justify-content: center;
-      align-items: center;  
+      display: grid;
+      align-content: center; 
+      text-align: center;  
       font-size: 12px;  
       font-weight: 400px;  
       color: azure;  
@@ -219,7 +211,7 @@ li {
 .servises__our {  
       display: flex;
       justify-content: center;   
-      max-width: 100%; 
+      width: 100%; 
 }
 
 .servises__our h1 {
@@ -279,12 +271,11 @@ li {
 
 .provide__info {
       display: flex;
-      justify-content: space-around;
-      max-width: 100%;      
+      justify-content: space-around;    
 }
 
 .provide__server { 
-      padding: 100px 0px;        
+      padding: 100px 0px; 
 }
 
 .provide__server:nth-child(2) {	
@@ -295,7 +286,7 @@ li {
 }
 
 .provide__server img {
-      margin: 10px 70px;     
+      margin: 10px 70px;
 }
 
 .provide__server h1  {
@@ -323,7 +314,7 @@ li {
 .provide__btn {   
       display: flex;
       justify-content: center;
-      margin: 30px 0px;
+      padding: 30px 0px;
 }
   
 .provide__btn a {    
@@ -350,7 +341,9 @@ li {
 
 .provide__pro {
       display: flex;
-      justify-content: flex-end;     
+      justify-content: flex-end;
+      flex-wrap: wrap; 
+      width: 100%;
 }
 
 .provide__left  {
@@ -395,7 +388,7 @@ li {
 }
 
 .Feedback__home {    
-      max-width: 100%;
+      width: 100%;
       display: flex;
       justify-content: center;  
 }
@@ -688,7 +681,7 @@ span:hover {
 .slick-slide {     
       display: grid;
       width: 100%;
-      margin: 20px 0px 50px;        
+      margin: 20px 0px;        
 }
 
 .slider__slick {      
@@ -741,7 +734,7 @@ span:hover {
 }
 
 .slick-active {
-      opacity: .7;
+      opacity: .5;
 }
 
 .slick-current {
@@ -951,19 +944,13 @@ span:hover {
 }
 
 
-@media (max-width: 970px){
+/*@media (max-width: 970px){
    .container{
-      max-width: 750px;
+        max-width: 750px;
    }
 }
-@media (max-width: 992px){
-   .container{
-      max-width: 750px;
-   }
-}
-
 @media (max-width: 767px){
    .container{
-      max-width: none;
+        max-width: 460px;
    }
 }
