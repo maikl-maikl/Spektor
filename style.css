@@ -26,6 +26,7 @@ li {
 .container {
       margin: 0 auto; 
       width: 100%;
+
 }
 
 .header__logo {  
@@ -46,8 +47,7 @@ li {
 .menu {
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;     
+      justify-content: center;      
 }
 
 .menu li {
@@ -77,7 +77,7 @@ li {
 .header__icon {   
       display: flex;
       justify-content: flex-end;
-      align-content: center;   
+      align-items: center;   
       margin: -40px 75px;      
 }    
 
@@ -90,45 +90,46 @@ li {
 }
 
 .header__icon a:nth-child(2){ 
-      padding: 10px 6px 6px;   
+      padding: 10px 8px 10px 8px;   
 }
 
 .header__icon a:nth-child(3){
-      padding: 10px 5px 5px;  
+      padding: 10px 6px 10px 6px;  
 } 
 
-.gorizont__liner:before {
-      content: "";
+.gorizont__liner {      
       border: 1px solid #af9de5;
       display: block; 
-      margin: 73px 0;   
+      margin: 70px 0;     
 }
 
 .about {
       background-color: #fff;
-      min-height: 430px;       
+      min-height: 425px;     
 }
 
 
 .about__column {
-    display: flex;
-    max-width: 500px;
-    justify-content: space-between;      
+     display: flex;    
+     justify-content: space-between; 
+     max-width: 500px;
+     max-height: 425px;    
 }
 
 .about__icon {     
-    display: flex;
-    justify-content: flex-start; 
+     display: flex;
+     justify-content: flex-start;
+     flex: 1;            
 }
 
 
 .about__icon img {
-       max-width: 675px;       
+      max-width: 675px;                                     
 }
 
 
 .about__title {    
-   padding: 45px 45px;
+      padding: 45px 45px;
 }
 
 
@@ -163,7 +164,7 @@ li {
 }
 
 .about__wrrap {
-       margin: 30px 0px;
+      margin: 30px 0px;
 }
 
 
@@ -291,7 +292,7 @@ li {
       width: 390px; 
       text-align: center;
       background-color: #097e89;
-      min-height: 555px;  
+      min-height: 555px;
 }
 
 .provide__server img {
@@ -520,9 +521,8 @@ b {
 
 .portfolio__pro {
       display: flex;
-      justify-content: flex-end; 
-      flex-wrap: wrap;  
-      width: 100%;       
+      justify-content: flex-end;      
+      max-width: 100%;       
 }
 
 .portfolio__inter {
@@ -573,10 +573,6 @@ span {
       font-weight: 700px;   
 }
 
-span:hover {
-      opacity: 0.70;
-      transition: 0.30s linear; 
-}
 
 .portfolio__inter span {
       padding-left: 18px; 
@@ -618,14 +614,14 @@ span:hover {
       margin-top: -5px;   
 }
     
-.sliders {
+.slides {
       background-color: #fff;
       min-height: 530px;       
 }
   
 .slider__inner {
      display: grid;   
-     text-align: center;  
+     justify-content: center;  
 }
 
 .slider__inner h1 {  
@@ -686,22 +682,19 @@ span:hover {
 }
 
 .slick-slide {     
-      display: grid;
-      width: 100%;
+      display: grid;    
       margin: 20px 0px 50px;        
 }
 
 .slider__slick {      
       display: grid;            
-      grid-template-columns: repeat(4,auto);      
-      max-width: 100%;
-      margin-left: 80px;
+      grid-template-columns: repeat(4,auto);   
+      justify-content: space-around;
 }
 
 
 .slick-slide img {
-      margin: 30px 0px;
-      max-width: 100%;
+      margin: 30px 0px;    
       cursor: pointer;                   
 }
 
@@ -717,7 +710,8 @@ span:hover {
 
 .slick-arrow {      
       font-size: 0px;
-      cursor: pointer;     
+      cursor: pointer;
+      outline: none;     
 }
 
 .slick-next {     
@@ -726,8 +720,7 @@ span:hover {
      width: 40px;    
      height: 40px;    
      z-index: 1;   
-     background: url('img/arrow-arrows-right.svg') #3d9ee1 0 0 / 100% no-repeat;      
-     outline: none;
+     background: url('img/arrow-arrows-right.svg') #3d9ee1 0 0 / 100% no-repeat;  
 } 
 
 .slick-prev {     
@@ -736,8 +729,7 @@ span:hover {
      width: 40px;
      height: 40px;    
      z-index: 1;
-     background: url('img/arrow-arrows-left.svg') #3d9ee1 0 0 / 100% no-repeat;   
-     outline: none;         
+     background: url('img/arrow-arrows-left.svg') #3d9ee1 0 0 / 100% no-repeat;          
 }
 
 .slick-active {
@@ -927,9 +919,8 @@ span:hover {
 
 .plans__social {
       display: flex;
-      justify-content: flex-end;
-      margin-top: 40px;
-      margin-right: 90px;   
+      justify-content: flex-end;    
+      margin: 40px 90px 0px;  
 }
 
 .plans__social a {
@@ -942,11 +933,11 @@ span:hover {
       border-radius: 50%;  
 }
 
-.plans__social a:nth-child(1) {
+.plans__social a:nth-child(1){
       padding: 10px 15px 10px 15px;
 }
 
-.plans__social a:nth-child(3) {
+.plans__social a:nth-child(3){
       padding: 10px 10px 10px 10px;
 }
 
