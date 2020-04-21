@@ -25,7 +25,7 @@ li {
 
 .container {
       margin: 0 auto; 
-      width: 100%;
+      max-width: 100%;
 
 }
 
@@ -238,7 +238,7 @@ li {
       border: 1px solid #959595;
       width: 350px;
       position: relative;
-      bottom: 70px;
+      bottom: 65px;
       left: 140px; 
 }
 
@@ -257,7 +257,7 @@ li {
       border: 1px solid #959595; 
       position: relative;
       width: 350px;
-      bottom: 73px;
+      bottom: 68px;
       margin-left: auto;
       right: 150px;   
 }
@@ -416,7 +416,7 @@ li {
       border: 1px solid #959595;
       width: 350px;
       position: relative;
-      bottom: 70px;
+      bottom: 65px;
       left: 145px;
 }
 
@@ -435,7 +435,7 @@ li {
       border: 1px solid #959595; 
       position: relative;
       width: 350px;
-      bottom: 73px;
+      bottom: 68px;
       margin-left: auto;
       margin-right: 150px;
 }
@@ -823,13 +823,14 @@ span {
 .footer {
       background-color: #474747;
       min-height: 207px;
-      padding: 10px 0px 50px 0px;
+      padding: 10px 0px 45px 0px;
 }
 
 .plans__contakt { 
       display: flex;
+      justify-content: flex-start;
       margin-left: 40px;
-      width: 90%;   
+      max-width: 100%;   
 }
 
 .plans__dellet {   
@@ -869,9 +870,8 @@ span {
 
 .plans {
       display: flex;
-      justify-content: flex-end;
-      margin-top: -150px;   
-      margin-right: 90px;  
+      justify-content: flex-end;    
+      margin: -150px 90px 0px; 
 }
 
 .plans__email { 
