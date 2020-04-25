@@ -4,7 +4,9 @@ $('.slider').slick({
        slidesToShow: 3,
        slidesToScroll: 2,     
        autoplay: false,
-       autoplaySpeed: 1000,
-	   
+       autoplaySpeed: 1000,	 
+       arrows: true,
+       
+    });
+
 	  
-});
