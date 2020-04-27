@@ -58,7 +58,7 @@ ul, li {
       line-height: 26px;   
       color: #fff;   
       letter-spacing: 1px; 
-      transition: linear 0.30s;
+      transition: 0.30s linear;
       font-weight: normal; 
 }
 
@@ -122,9 +122,9 @@ ul, li {
 }
 
 
-.about__title h1 {    
-      color: #3f3f3f;
+.about__title h1 { 
       margin: 10px 0px;
+      color: #3f3f3f;     
       font-weight: 400;
       font-size: 30px;
       line-height: 20px;   
@@ -182,16 +182,16 @@ ul, li {
       font-size: 12px;  
       font-weight: 400px;  
       color: azure;     
-      padding: 5px 25px 5px 25px;
+      padding: 5px 20px 5px 20px;
       line-height: 20px;
       border-radius: 2px;
       letter-spacing: 0.10em;   
-      background-color: #05a0af;         
+      background-color: #05a0af;
+      transition: 0.10s linear;         
 }
 
 .about__btn a:hover {
-      background-color: #96a39a;
-      transition: linear 0.10s;  
+      color: #64ac78;        
 }
 
 .servises {
@@ -216,11 +216,11 @@ ul, li {
 }
 
 .servises__left {
-      border: 1px solid #959595;
-      width: 350px;
-      position: relative;
+      position: relative;    
+      width: 350px;     
       bottom: 65px;
-      left: 140px; 
+      left: 140px;
+      border: 1px solid #959595; 
 }
 
 .servises__left:before {
@@ -267,7 +267,7 @@ ul, li {
 
 
 .provaid__server {     
-      transition: linear 0.20s;
+      transition: 0.20s linear;
       flex: 1 1 auto;
       height: 555px;
       padding: 100px 0px 0px;
@@ -310,6 +310,7 @@ ul, li {
       display: flex;
       justify-content: center;
       margin: 30px 0px;
+      transition: 0.10s linear; 
 }
   
 .provaid__btn a {   
@@ -323,12 +324,11 @@ ul, li {
       font-size: 14px;
       line-height: 20px;
       background-color: #959595;   
-      font-family: "times new roman",sans-serif;   
+      font-family: "times new roman",sans-serif;          
 }
 
 .provaid__btn:hover {
-      opacity: 0.5;
-      transition: linear 0.10s; 
+      opacity: 0.5;     
 }
 
 #modal {
@@ -453,22 +453,22 @@ ul, li {
       text-align: center;           
 }
 
-.portfolio__tex p {   
-      width: 240px;
+.portfolio__tex p { 
+      position: relative;     
       font-size: 20px;
       line-height: 26px;
       color: #a29e9e;
       font-weight: 700;
-      position: relative; 
+      width: 240px;
       top: 30px;
       left: 50px;
 }
 
 .portfolio__line {
       position: relative;
-      top: 40px;
       display: block;
-      margin-left: 135px;
+      top: 40px;     
+      left: 135px;
       width: 65px;
       border: 1px solid #a29e9e;   
 }
@@ -567,13 +567,12 @@ span {
 }
 
 
-.portfolio__inter span {
-      padding-left: 18px; 
-      padding-right: 36px;    
+.portfolio__inter span {   
+      padding: 0px 36px 0px 18px;    
 }
 
 .wrrap-1 {
-      margin-left: 0px;
+      margin: 0px;
 } 
 
 .wrraper-1 {
@@ -594,9 +593,9 @@ span {
       font-size: 12px;   
 }
 
-.wrrap-3 {
+.wrrap-3 {    
       margin-left: -20px;
-      margin-top: -5px;
+      margin-top: -5px;      
 } 
 
 .wrraper-3 {
@@ -684,7 +683,6 @@ span {
       cursor: pointer;                   
 }
 
-
 .slick-list {
      overflow: hidden;
      padding: 0px 50px;       
@@ -695,33 +693,42 @@ span {
 }
 
 
-.slick-arrow {      
+.slick-btn {      
      font-size: 0px;
      cursor: pointer;
      outline: none;
-     transition: 0.10s linear;        
+     transition: 0.10s linear;       
 }
 
-.slick-next {     
-     position: relative;
-     top: 50%;    
-     width: 40px;    
-     height: 40px;    
-     z-index: 1;
-     background: url('img/arrow-arrows-right.svg')#fff 0 0 / 100% no-repeat;          
-} 
 
-.slick-prev {     
+.slick-prev.slick-btn {
      position: relative;
-     top: 50%;
+     top: 45%;
      width: 40px;
      height: 40px;    
-     z-index: 1;    
-     background: url('img/arrow-arrows-left.svg')#fff 0 0 / 100% no-repeat;          
+     z-index: 1;
+     border: 1px solid #fff;     
+     background: url('img/arrow-arrows-left.svg')0 0 / 100% no-repeat;     
 }
 
-.slick-arrow:hover {
-     background-color:#767474;    
+.slick-next.slick-btn {
+     position: relative;
+     top: 45%;
+     width: 40px;
+     height: 40px;    
+     z-index: 1;
+     border: 1px solid #fff;      
+     background: url('img/arrow-arrows-right.svg')0 0 / 100% no-repeat;       
+}
+
+
+.slick-btn.slick-disabled {
+     cursor: default;
+     background-color: transparent;            
+}
+
+.slick-btn:hover {
+     background-color: #3d9ee1;
 }
 
 
@@ -863,7 +870,7 @@ span {
       height: 50px;
       padding: 0px 15px;
       background-color: #cccccc;
-      transition: .1s linear;      
+      transition: 0.20s linear;      
 }
 
 .contakt__email a {
@@ -885,7 +892,7 @@ span {
       padding: 0px 25px;
       background-color: #0072bc;    
       border: 1px solid #cccccc;
-      transition: .1s linear;   
+      transition: 0.20s linear;   
 }
 
 .contakt__Subscribe a {
@@ -902,7 +909,7 @@ span {
 .contakt__social {
       display: flex;
       justify-content: flex-end;    
-      margin: 40px 60px 0px;     
+      margin: 40px 62px 0px;     
 }
 
 .contakt__social a {     
@@ -913,7 +920,7 @@ span {
       background-color: #2e2e2e;
       padding: 12px; 
       border-radius: 50%;
-      padding: 11px 13px 10px 13px;      
+      padding: 12px 14px 12px 14px;      
 }
 
 
