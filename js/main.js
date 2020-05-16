@@ -1,6 +1,6 @@
 $('.slider').slick({
-       speed: 500,
-       infinite: true,     
+	   infinite: true, 
+       speed: 500,          
        arrows: true, 
        slidesToShow: 3,
        slidesToScroll: 2,     
